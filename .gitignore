@@ -1,0 +1,18 @@
+# build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# never commit game or third-party assemblies
+*.dll
+*.pdb
+*.mdb
+
+# local tooling state
+downloads/
+mods.txt
+mods_test.txt
+__pycache__/
+.state.json

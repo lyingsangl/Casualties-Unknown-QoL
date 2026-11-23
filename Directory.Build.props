@@ -1,0 +1,21 @@
+<Project>
+
+  <!--
+    游戏目录解析顺序：
+      1. 命令行：dotnet build -p:GameDir="D:\Steam\steamapps\common\Casualties Unknown"
+      2. 环境变量：CASUALTIES_DIR（推荐，一次设置全局生效）
+    两者都没提供时，构建会直接报错并给出提示，避免出现难以理解的
+    "找不到 BepInEx.dll" 之类的错误。
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">$(CASUALTIES_DIR)</GameDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateGameDir" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'$(GameDir)' == ''"
+           Text="GameDir is not set. Set the CASUALTIES_DIR environment variable to your game folder, or pass -p:GameDir=&quot;...&quot; on the command line. See BUILD_GUIDE.md." />
+    <Error Condition="!Exists('$(GameDir)/BepInEx/core/BepInEx.dll')"
+           Text="BepInEx.dll was not found under '$(GameDir)/BepInEx/core'. Make sure BepInEx 5.4.x (x64) is installed into the game folder, and that GameDir points at the game root." />
+  </Target>
+
+</Project>
