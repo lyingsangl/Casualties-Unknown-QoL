@@ -5,7 +5,7 @@
     <AssemblyName>RshLib</AssemblyName>
     <RootNamespace>RshLibCompat</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>3.3.0</Version>
+    <Version>6.2.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>

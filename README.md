@@ -1,6 +1,6 @@
 # Casualties: Unknown — QoL &amp; Original Mods
 
-Source code for the nine mods shipped in the **Casualties: Unknown QoL Pack**, plus the helper scripts used by the installer.
+Source code for the twelve mods shipped in the **Casualties: Unknown QoL Pack**, plus the helper scripts used by the installer.
 
 This repository exists so that anyone — players, other mod authors, or platform reviewers — can read what the mods do and rebuild the exact DLLs from source. Nothing here is obfuscated, packed, or downloaded at runtime.
 
@@ -14,11 +14,14 @@ This repository exists so that anyone — players, other mod authors, or platfor
 | `Mods/MiniMapLite` | MiniMap Lite | 1.1.1 | UI |
 | `Mods/CrosshairLite` | Crosshair Lite | 1.4.0 | UI |
 | `Mods/SerumCN` | Serum CN | 1.1.0 | Localisation |
-| `Mods/RshLibCompat` | RshLib (compatibility build) | 3.3.0 | Prerequisite fix |
+| `Mods/RshLibCompat` | RshLib (compatibility build) | 6.2.0 | Prerequisite fix |
 | `Mods/CuGuard` | CU Guard | 1.0.1 | Crash guard |
 | `Mods/TraderTweak` | Trader Tweak | 1.0.0 | Balance tweak |
-| `Mods/DietDrug` | Drug Expansion | 7.5.0 | Content |
+| `Mods/DietDrug` | Drug Expansion | 21.6.0 | Content |
 | `Mods/IlmeniteExtraction` | Ilmenite Extraction | 1.0.1 | Content |
+| `Mods/GunPack` | Gun Pack Integration | 1.1.0 | Content |
+| `Mods/AmmoPress` | Bulk Ammo Loading | 2.3.0 | Content |
+| `Mods/RecipeBan` | Recipe Ban | 1.1.0 | Utility |
 | `Installer/Source` | Installer scripts | — | Tooling |
 
 Build instructions: **[BUILD_GUIDE.md](BUILD_GUIDE.md)**.

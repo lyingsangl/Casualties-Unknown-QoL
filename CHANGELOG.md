@@ -1,3 +1,11 @@
+## 2026-11-25 — Gun pack split, ammo loading, recipe ban
+
+- **DietDrug 21.6.0** — concentrated drug variants (100 mL + heat source → 10 mL bottle, 10× potency with a 100 mL cap), per-drug bottle tints with a white plastic cap, empty bottles self-destruct, test drugs disabled by default with an in-game settings toggle, concentrated liquids excluded from mini-barrel loot.
+- **RshLib 6.2.0** — `barrel` now points at the muzzle-flash transform (fixes the raycast offset on every custom gun), per-instance init guard, configurable trader stock chance (default 30 %, max 1 gun).
+- **GunPack 1.1.0** — new standalone plugin that registers gun packs into CUCoreLib (icons, stat lines, loot weight); SCAR removed.
+- **AmmoPress 2.3.0** — shell collector (120 casings, hazard-yellow box) plus F-marked magazine auto-filling; casings use a dedicated ammo type so shotguns cannot eat them.
+- **RecipeBan 1.1.0** — removes recipes by result id or display name; used to strip the mod-added Gravity Metal T1–T4 recipes while keeping the vanilla items.
+
 # Changelog
 
 Versions follow the plugin versions in `[BepInPlugin]`, which are independent per mod.
