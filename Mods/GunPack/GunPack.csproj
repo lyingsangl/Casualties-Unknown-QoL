@@ -5,7 +5,7 @@
     <AssemblyName>GunPack</AssemblyName>
     <RootNamespace>GunPack</RootNamespace>
     <LangVersion>latest</LangVersion>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <GameDir>D:\Steam\steamapps\common\Casualties Unknown</GameDir>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
